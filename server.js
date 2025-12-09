@@ -6,7 +6,7 @@ import todoRoute from "./src/routes/todoRoute.js";
 
 const app = express();
 
-const port = process.env.PORT || 7001;
+const port = process.env.PORT || 7002;
 
 app.use(express.json())
 app.use("/user", userRoute)

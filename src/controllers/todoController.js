@@ -26,7 +26,7 @@ export const getAll = async (req, res) => {
         const todoData = await todoSchema.find({ userId: req.userId })
 
         if (todoData) {
-            return res.status(201).json({
+            return res.status(200).json({
                 success: true,
                 message: "Todo fetched",
                 todoData
