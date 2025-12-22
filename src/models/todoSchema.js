@@ -6,10 +6,14 @@ const todoSchema = new mongoose.Schema({
         ref: "user",
         required: true
     },
-    title: {
+    picture: {
         type: String,
         required: true
     },
+    title: {
+        type: String,
+        required: true
+    }
 }, { timestamps: true })
 
 export default mongoose.model("todouserlist", todoSchema)
